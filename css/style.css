@@ -1,0 +1,449 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+body {
+ line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+ display:block;
+}
+nav ul {
+ list-style:none;
+}
+blockquote, q {
+ quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content:'';
+ content:none;
+}
+a {
+ margin:0;
+ padding:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+ background-color:#ff9;
+ color:#000;
+ text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+ background-color:#ff9;
+ color:#000; 
+ font-style:italic;
+ font-weight:bold;
+}
+del {
+ text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+ border-bottom:1px dotted;
+ cursor:help;
+}
+table {
+ border-collapse:collapse;
+ border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+ display:block;
+ height:1px;
+ border:0; 
+ border-top:1px solid #cccccc;
+ margin:1em 0;
+ padding:0;
+}
+input, select {
+ vertical-align:middle;
+}
+
+/***
+FULL SCREEN IMAGE BACKGROUND
+***/
+
+#main-container {
+	width: 100vw;
+	height: 100vh;
+	background: url("../assets/refs-cover-full.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/***
+FONTS
+***/
+@font-face {
+    font-family: apercu;
+    src: url("../assets/apercu-webfont.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: consolas;
+    src: url("../assets/consolas.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: andale;
+    src: url("../assets/andale-webfont.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: freight;
+    src: url("../assets/freight.ttf") format('truetype');
+}
+
+.freight {
+	font-family: freight;
+}
+
+.apercu {
+    font-family: apercu;
+    letter-spacing: 0.2rem;
+}
+
+h1.apercu {
+    font-size: 6rem;
+}
+
+h2.apercu {
+    font-size: 3rem;
+}
+
+h3.apercu {
+    font-size: 2rem;
+}
+
+.apple {
+	font-family: apple;
+}
+
+.consolas {
+	font-family: consolas;
+}
+
+h3.freight {
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
+}
+
+p.freight {
+	font-size: 1.5rem;
+	letter-spacing: 0.2rem;
+}
+
+.andale {
+	font-family: andale;
+}
+
+/***
+PROMO MODAL CODE
+***/
+
+#promo-bg {
+
+	position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: auto; 
+    background-color: rgba(48,59,76,1); 
+}
+
+#x-out {
+	cursor: pointer; 
+	margin-top: 20px;
+	margin-right: 20px;	
+}
+
+#promo-modal {
+	position: fixed;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	display: flex;
+	background-color: white;
+	width: 80vw; 
+	max-width: 1500px;
+	text-align: left;
+	border: 1px solid #F4C0B9;
+}
+
+#l-side {
+	flex:1;
+}
+
+#l-side img {
+	width: 100%;
+	margin-bottom: -4px;
+}
+
+#r-side {
+	flex:1;
+	background-color: #2A4D7D;
+}
+
+#main-logo img {
+	margin-left: 20px;
+}
+
+
+#promo-modal-promo-text h1 {
+	margin-top: 20px;
+	margin-left: 20px;
+	color: white;
+}
+
+#promo-modal-promo-text h2 {
+	margin-top: 20px;
+	margin-left: 20px;
+	color: white;
+	text-align: left;
+
+/*	color: #21605F;*/
+}
+
+#promo-modal-promo-text h3 {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	color: white;
+	border: solid 1px #F4C0B9;
+	width: 170px;
+  	padding: 20px 5px 20px 10px;
+
+} 
+
+#promo-modal-promo-links {
+/*	margin-top: 30%;
+*/}
+
+#promo-modal-promo-links h3 {
+/*	margin-top: 20px;
+*/	margin-left: 25px;
+	text-align: left;
+	color: white;	
+}
+
+#promo-modal-promo-links a {
+	color: #F4C0B9;
+	font-family: consolas;
+}
+
+#promo-modal-promo-links a:hover {
+	color: white;
+}
+
+/***
+SINGLE LINKS CODE
+***/
+
+#single-links {
+	display: none;
+	height: 100vh;	
+	color: white;
+	align-items: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;	
+	justify-content: space-between;
+}
+
+#single-links p {
+	color: white;
+	font-size: 2.5rem;
+	padding: 10px;
+}
+
+#contact-btn {
+	display: none;
+}
+
+#contact-btn a {
+	color: #F4C0B9;
+	font-size: 2rem;
+	padding: 10px;
+	position: absolute; 
+	bottom: 0px;
+	left: 10px; 
+	text-decoration: none;
+}
+
+#contact-btn a:hover {
+	color: white;
+}
+
+#social-section {
+	display: none;
+	position: absolute; 
+	bottom: 0px;
+	right: 5px;
+}
+
+#social-section a img{
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+
+/*** 
+EMBED OVERLAY
+***/
+.video-modal {
+	display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	padding: 10px;
+}
+
+#forever-modal {
+	background-color: #002cb0;
+}
+
+/*#forever-anchor:hover {
+	background: url("/refs2/assets/forever-full.jpg") no-repeat center center fixed;  
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+
+#pain-modal {
+	background-color: #21605F;
+}
+
+#spotlight-modal {
+	background-color: #F4C0B9;
+}
+
+/***
+CONTACT PAGE STYLES
+***/
+
+#contact-container {
+	height: 100vh;
+	width: 100vw;	
+	color: #F4C0B9;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#management-info {
+	text-align: left;
+	background: white;
+	color: #F6A623;
+}
+
+#management-info h2 {
+	margin-top: 50px;
+}
+
+#management-info h3 {
+	margin-top: 20px;
+}
+
+#management-info h2, h3, p {
+	padding-top: 20px; 
+	margin-left: 20px;
+
+}
+
+#management-name, #management-email {
+	color: #2A4D7D;
+}
+
+#press-info {
+	text-align: right;
+	background: #2A4D7D;
+	color: white;
+}
+
+#press-info h2 {
+ margin-top: 50px;
+
+}
+
+#press-info h3 {
+	margin-top: 20px;
+}
+
+#press-info h2, h3, p {
+	padding-top: 10px;
+	margin-right: 20px;	
+}
+
+#press-name, #press-email {
+	color: #F6A623;
+}
+
+#singles-btn a {
+	color: #F6A623;
+	font-size: 2rem;
+	padding: 10px;
+	position: absolute; 
+	bottom: 0px;
+	left: 10px; 
+	text-decoration: none;
+}
+
+#singles-btn a:hover {
+	color: white;
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+	
+		#container {
+		display: flex; 
+		align-items: flex-start;
+		align-content: space-between;
+		}
+
+		#single-links {
+			flex-direction: column;
+		}
+		
+}
